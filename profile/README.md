@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="assets/velofy-icon.png" alt="velofy" width="128">
+  <img src="assets/velofy-icon.png" alt="velofy" width="248">
 </p>
 
 <h1 align="center">Velofy</h1>
