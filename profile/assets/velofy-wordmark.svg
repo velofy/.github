@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 240" width="900" height="240" role="img" aria-label="Velofy">
+  <title>Velofy</title>
+  <rect x="-30" y="-30" width="960" height="300" fill="#0a0a0a"/>
+  <text x="450" y="152" text-anchor="middle" fill="#f5f4f2"
+        font-family="Didot, 'Hoefler Text', 'Playfair Display', Georgia, 'Times New Roman', serif"
+        font-style="italic" font-size="128" letter-spacing="0.5">Velofy</text>
+</svg>

@@ -1,3 +1,7 @@
+<p align="center">
+  <img src="assets/velofy-wordmark.png" alt="Velofy" width="360">
+</p>
+
 <p align="center"><strong>AI Native builders out of Gurgaon, India.</strong></p>
 
 <p align="center">Open Source. by Nature.</p>
