@@ -1,9 +1,3 @@
-<p align="center">
-  <img src="assets/velofy-icon.png" alt="velofy" width="248">
-</p>
-
-<h1 align="center">Velofy</h1>
-
 <p align="center"><strong>AI Native builders out of Gurgaon, India.</strong></p>
 
 <p align="center">Open Source. by Nature.</p>
