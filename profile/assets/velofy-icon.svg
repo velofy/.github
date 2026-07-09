@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512" role="img" aria-label="velofy">
+  <title>velofy</title>
+  <defs>
+    <linearGradient id="tile" x1="0" y1="0" x2="0.4" y2="1">
+      <stop offset="0" stop-color="#1a1a1c"/>
+      <stop offset="1" stop-color="#070708"/>
+    </linearGradient>
+    <linearGradient id="face" x1="0.1" y1="0" x2="0.6" y2="1">
+      <stop offset="0" stop-color="#ffffff"/>
+      <stop offset="1" stop-color="#d7d7db"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="512" height="512" rx="118" fill="url(#tile)"/>
+
+  <g transform="translate(-12,-38)">
+    <!-- depth: two extruded layers offset down-right, graded from dark to mid -->
+    <path d="M138,166 L214,166 L256,302 L298,166 L374,166 L256,386 Z" transform="translate(30,38)" fill="#2c2c30"/>
+    <path d="M138,166 L214,166 L256,302 L298,166 L374,166 L256,386 Z" transform="translate(15,19)" fill="#5b5b62"/>
+
+    <!-- front V: folded into a light facet and a shadowed facet -->
+    <path d="M138,166 L214,166 L256,302 L256,386 Z" fill="url(#face)"/>
+    <path d="M374,166 L298,166 L256,302 L256,386 Z" fill="#b7b7bd"/>
+
+    <!-- crisp fold highlight down the center seam -->
+    <path d="M256,302 L256,386" stroke="#ffffff" stroke-width="2.5" stroke-opacity="0.5"/>
+  </g>
+</svg>
