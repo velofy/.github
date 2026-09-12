@@ -2,7 +2,7 @@
   <img src="assets/velofy-wordmark.png" alt="Velofy" width="360">
 </p>
 
-<p align="center"><strong>AI Native builders out of Gurgaon, India.</strong></p>
+<p align="center"><strong>AI Native builders out of Delhi, India.</strong></p>
 
 <p align="center">Open Source. by Nature.</p>
 
@@ -53,4 +53,4 @@ brew tap velofy/tap
 
 ---
 
-<p align="center">Made with intent in Gurgaon, India 🇮🇳</p>
+<p align="center">Made with intent in Delhi, India 🇮🇳</p>
