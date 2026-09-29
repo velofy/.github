@@ -1,56 +1,29 @@
 <p align="center">
-  <img src="assets/velofy-wordmark.png" alt="Velofy" width="360">
+  <img src="assets/velofy-wordmark.png" alt="Velofy" width="240">
 </p>
 
-<p align="center"><strong>AI Native builders out of Delhi, India.</strong></p>
+Velofy is an open source applied AI lab based in Delhi, India. We build tools, frameworks and harnesses that are AI native from the first commit, designed for a world where AI agents write, read and run code alongside people.
 
-<p align="center">Open Source. by Nature.</p>
+Everything is documented at [velofy.co](https://velofy.co/). Source is on [GitHub](https://github.com/velofy).
 
----
+## Projects
 
-We build software that is AI native from the first commit: tools, frameworks, and harnesses designed for a world where AI agents write, read, and run code alongside people.
+- [**Summit.js**](https://velofy.co/summitjs/): A rugged, signal-powered framework for composing behavior directly in your HTML. CSP-safe, ~13KB. ([source](https://github.com/velofy/summitjs))
+- [**Troy**](https://velofy.co/troy/): A headless browser an agent can actually read: DOM for structure, OCR for the pixels the DOM cannot explain. ([source](https://github.com/velofy/troy))
+- [**Querion**](https://velofy.co/querion/): A strictly read-only, natural-language data analyst that plugs into any platform and runs on the Claude Code CLI. ([source](https://github.com/anishfyi/querion))
+- [**Trove**](https://velofy.co/trove/): A Claude Code skill that builds and maintains a personal, file-based semantic layer as you work, and reloads it every session. ([source](https://github.com/anishfyi/trove))
+- [**Terbium**](https://velofy.co/terbium/): An algorithmic multi-file parser (PDF/PPTX/XLSX/CSV) that scores its own confidence and only reaches for AI when it is genuinely stuck. ([source](https://github.com/velofy/terbium))
+- [**curl_reap**](https://velofy.co/curl_reap/): Browser-grade TLS impersonation, self-healing selectors, and a concurrent crawl engine in one library. ([source](https://github.com/anishfyi/curl_reap))
+- [**glep**](https://velofy.co/glep/): A better version of grep and glob. ([source](https://github.com/velofy/glep))
+- [**Vaulty**](https://velofy.co/vaulty/): A transparent work-in-progress screen lock for macOS. Password to unlock, terminals stay live. ([source](https://github.com/velofy/vaulty))
+- [**mac-uninstaller**](https://velofy.co/mac-uninstaller/): A fast native macOS app to fully uninstall apps (bundle and all leftovers) and reclaim space. Trash-only, SwiftUI. ([source](https://github.com/velofy/mac-uninstaller))
+- [**Pawse**](https://velofy.co/pawse/): The pomeranian that makes you take breaks. ([source](https://github.com/velofy/pawse))
+- [**classy-fonts**](https://velofy.co/classy-fonts/): A cabinet of 324 free typefaces, a live two-tab specimen gallery, split by licence. ([source](https://github.com/velofy/classy-fonts))
 
-A consistent thesis runs through everything here — **build tools whose primary user is an AI agent, not a human.** Machine-readable contracts, `AGENTS.md` files, `llms.txt` discovery, and formats designed to be read correctly on the first pass.
-
-## Frameworks
-
-### Summit.js
-
-[**Summit.js**](https://github.com/velofy/summitjs) is the open source, AI Agent Native JavaScript framework for composing behavior directly in your HTML. Drop in one script and go. No build step, no virtual DOM, no `eval`.
-
-- **HTML-first and local.** Behavior lives on the element it affects, so an agent edits one place and sees the result.
-- **Safe by construction.** Expressions are interpreted, never `eval`ed, so generated markup runs under a strict CSP.
-- **Built to be read by machines.** `llms.txt`, full-corpus markdown, and a drop-in `AGENTS.md` brief for your own agent.
-- **A UI library, included.** Accessible, token-themed components in about 13KB gzipped.
-
-Docs: [velofy.github.io/summitjs](https://velofy.github.io/summitjs/)
-
-## Agent tooling
-
-| Project | What it does |
-| --- | --- |
-| [**troy**](https://github.com/velofy/troy) | A headless browser an agent can actually read: DOM for structure, OCR for the pixels the DOM cannot explain. |
-| [**querion**](https://github.com/velofy/querion) | A strictly read-only, natural-language data analyst. Connect Postgres, add your API docs, ask in plain English. |
-| [**trove**](https://github.com/velofy/trove) | Builds and maintains a personal, file-based semantic layer as you work, and reloads it every session. |
-| [**terbium**](https://github.com/velofy/terbium) | Algorithmic multi-file parser (PDF/PPTX/XLSX/CSV) that scores its own confidence and only reaches for AI when genuinely stuck. |
-| [**curl_reap**](https://github.com/velofy/curl_reap) | Browser-grade TLS impersonation, self-healing selectors, and a concurrent crawl engine in one library. `pip install curl-reap` |
-
-## Developer tools
-
-| Project | What it does |
-| --- | --- |
-| [**glep**](https://github.com/velofy/glep) | A faster, more ergonomic take on grep and glob. Written in Rust. |
-| [**vaulty**](https://github.com/velofy/vaulty) | Transparent work-in-progress screen lock for macOS. Terminals stay live. |
-| [**mac-uninstaller**](https://github.com/velofy/mac-uninstaller) | Fully uninstall macOS apps — bundle plus every leftover — and reclaim the space. |
-| [**pawse**](https://github.com/velofy/pawse) | The pomeranian that makes you take breaks. |
-| [**classy-fonts**](https://github.com/velofy/classy-fonts) | A cabinet of 324 free typefaces with a live specimen gallery, split by licence. |
-
-Desktop apps install from our tap:
+## Install desktop apps
 
 ```sh
 brew tap velofy/tap
 ```
 
----
-
-<p align="center">Made with intent in Delhi, India 🇮🇳</p>
+Made with intent in Delhi, India.
