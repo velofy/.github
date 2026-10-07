@@ -6,24 +6,41 @@ Velofy is an open source applied AI lab based in Delhi, India. We build tools, f
 
 Everything is documented at [velofy.co](https://velofy.co/). Source is on [GitHub](https://github.com/velofy).
 
+## Why an applied AI lab
+
+Velofy began in 2025 as a small studio doing backend work for other companies. Client work taught us speed, but it did not compound. The tools we kept rebuilding for each job did.
+
+Those tools all filled the same kind of gap. Models can now read, plan and act. What has not caught up is everything around them. An agent cannot see the page you are signed into. It starts each session having forgotten the last one. It cannot be trusted near a production database. A spreadsheet or a slide deck comes back half read. A better model alone does not close that gap.
+
+Closing it is nobody's main job. The labs that train models are busy training them, and the companies that ship products are busy shipping. An applied AI lab sits between the two: it takes a model to real work, finds where it breaks, builds the missing piece and publishes it with the evidence. So the studio became a lab, and each project below is our answer to one of those gaps.
+
+The longer version is the founder's note on [velofy.co/about](https://velofy.co/about/).
+
 ## Projects
 
-- [**Summit.js**](https://velofy.co/summitjs/): A rugged, signal-powered framework for composing behavior directly in your HTML. CSP-safe, ~13KB. ([source](https://github.com/velofy/summitjs))
-- [**Troy**](https://velofy.co/troy/): A headless browser an agent can actually read: DOM for structure, OCR for the pixels the DOM cannot explain. ([source](https://github.com/velofy/troy))
-- [**Querion**](https://velofy.co/querion/): A strictly read-only, natural-language data analyst that plugs into any platform and runs on the Claude Code CLI. ([source](https://github.com/anishfyi/querion))
-- [**Trove**](https://velofy.co/trove/): A Claude Code skill that builds and maintains a personal, file-based semantic layer as you work, and reloads it every session. ([source](https://github.com/anishfyi/trove))
-- [**Terbium**](https://velofy.co/terbium/): An algorithmic multi-file parser (PDF/PPTX/XLSX/CSV) that scores its own confidence and only reaches for AI when it is genuinely stuck. ([source](https://github.com/velofy/terbium))
-- [**curl_reap**](https://velofy.co/curl_reap/): Browser-grade TLS impersonation, self-healing selectors, and a concurrent crawl engine in one library. ([source](https://github.com/anishfyi/curl_reap))
-- [**glep**](https://velofy.co/glep/): A better version of grep and glob. ([source](https://github.com/velofy/glep))
-- [**Vaulty**](https://velofy.co/vaulty/): A transparent work-in-progress screen lock for macOS. Password to unlock, terminals stay live. ([source](https://github.com/velofy/vaulty))
-- [**mac-uninstaller**](https://velofy.co/mac-uninstaller/): A fast native macOS app to fully uninstall apps (bundle and all leftovers) and reclaim space. Trash-only, SwiftUI. ([source](https://github.com/velofy/mac-uninstaller))
-- [**Pawse**](https://velofy.co/pawse/): The pomeranian that makes you take breaks. ([source](https://github.com/velofy/pawse))
-- [**classy-fonts**](https://velofy.co/classy-fonts/): A cabinet of 324 free typefaces, a live two-tab specimen gallery, split by licence. ([source](https://github.com/velofy/classy-fonts))
+Seven of these are open source. Kestrel, Numera and Whiteboard are products with their own sites.
+
+| Project | What it does | Links |
+| --- | --- | --- |
+| **Troy** | A free, open source Chromium browser for macOS and Windows. An AI agent attaches over the Chrome DevTools Protocol (CDP) to the session you are already signed into. | [Site](https://troy.velofy.co/) · [Docs](https://velofy.co/troy/) · [Source](https://github.com/velofy/troy) |
+| **Kestrel** | An interactive coding command-line interface (CLI) in one static Rust binary for Windows, macOS and Linux. It drives the agent CLIs you already run and works with any model. | [Site](https://kestrel.velofy.co/) |
+| **Numera** | The AI accountant for construction and commercial real estate: work-in-progress schedules, job costing, pay applications and retainage, kept current daily. | [Site](https://numera.velofy.co/) |
+| **Whiteboard** | A shared workspace for AI agents and their harnesses: clear channels and threads, requests that become tickets, and autonomous work that stops for review. | [Site](https://whiteboard.velofy.co/) |
+| **Summit.js** | A rugged, signal-powered framework for composing behavior directly in your HTML. Safe under a strict Content Security Policy (CSP), no build step, about 16KB gzipped. | [Site](https://summitjs.velofy.co/) · [Docs](https://velofy.co/summitjs/) · [Source](https://github.com/velofy/summitjs) |
+| **curl_reap** | Reap the web: browser-grade Transport Layer Security (TLS) impersonation, self-healing selectors and a concurrent crawl engine in one library. | [Docs](https://velofy.co/curl_reap/) · [Source](https://github.com/anishfyi/curl_reap) |
+| **Terbium** | An algorithmic multi-file parser (PDF, PPTX, XLSX, CSV) that scores its own confidence and only reaches for AI when it is genuinely stuck. | [Docs](https://velofy.co/terbium/) · [Source](https://github.com/velofy/terbium) |
+| **Trove** | A Claude Code skill that builds and maintains a personal, file-based semantic layer as you work, and reloads it every session. | [Docs](https://velofy.co/trove/) · [Source](https://github.com/anishfyi/trove) |
+| **Querion** | A strictly read-only, natural-language data analyst that plugs into any platform and runs on the Claude Code CLI. | [Docs](https://velofy.co/querion/) · [Source](https://github.com/anishfyi/querion) |
+| **glep** | A command-line code search tool for AI coding agents: an indexed grep and glob with ripgrep-compatible output and no daemon. | [Docs](https://velofy.co/glep/) · [Source](https://github.com/velofy/glep) |
+
+Beyond the code, we publish [research](https://velofy.co/research/) teardowns of how agent systems are built, and the [Bulletin](https://velofy.co/bulletin/), plain reviews of the latest AI models.
 
 ## Install desktop apps
 
 ```sh
 brew tap velofy/tap
 ```
+
+Setup notes are in the [tap's README](https://github.com/velofy/homebrew-tap).
 
 Made with intent in Delhi, India.
