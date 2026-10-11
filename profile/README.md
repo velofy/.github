@@ -1,6 +1,54 @@
-<p align="center">
-  <img src="assets/velofy-wordmark.png" alt="Velofy" width="240">
-</p>
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="header/top-dark.svg">
+  <img src="header/top-light.svg" alt="Velofy, Delhi, India" width="100%" height="20" align="left">
+</picture>
+<a href="https://velofy.co/">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="header/link-site-dark.svg">
+    <img src="header/link-site-light.svg" alt="Visit velofy.co" width="110" height="18" align="left">
+  </picture>
+</a>
+<img src="data:null;," width="100%" height="0" align="left" alt="">
+<a href="https://velofy.co/open-source/">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="header/link-open-source-dark.svg">
+    <img src="header/link-open-source-light.svg" alt="Browse Velofy's open source projects" width="110" height="18" align="left">
+  </picture>
+</a>
+<img src="data:null;," width="100%" height="0" align="left" alt="">
+<a href="https://velofy.co/research/">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="header/link-research-dark.svg">
+    <img src="header/link-research-light.svg" alt="Read Velofy's research" width="110" height="18" align="left">
+  </picture>
+</a>
+<img src="data:null;," width="100%" height="0" align="left" alt="">
+<a href="https://velofy.co/bulletin/">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="header/link-bulletin-dark.svg">
+    <img src="header/link-bulletin-light.svg" alt="Read the Bulletin, plain reviews of the latest AI models" width="110" height="18" align="left">
+  </picture>
+</a>
+<img src="data:null;," width="100%" height="0" align="left" alt="">
+<a href="https://www.linkedin.com/company/velofy">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="header/link-linkedin-dark.svg">
+    <img src="header/link-linkedin-light.svg" alt="Follow Velofy on LinkedIn" width="110" height="18" align="left">
+  </picture>
+</a>
+<img src="data:null;," width="100%" height="0" align="left" alt="">
+<a href="https://cal.com/anishfyi">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="header/link-call-dark.svg">
+    <img src="header/link-call-light.svg" alt="Book a call" width="110" height="18" align="left">
+  </picture>
+</a>
+<img src="data:null;," width="100%" height="0" align="left" alt="">
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="header/main-dark.svg">
+  <img src="header/main-light.svg" alt="An applied AI lab in Delhi. We build the tools, frameworks and harnesses AI agents need to do real work, and publish every one in the open. Below it, a honeycomb of the lab's public commits, one cell per day." width="100%" height="290" align="left">
+</picture>
+<br clear="left">
 
 Velofy is an open source applied AI lab based in Delhi, India. We build tools, frameworks and harnesses that are AI native from the first commit, designed for a world where AI agents write, read and run code alongside people.
 
