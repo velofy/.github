@@ -2,12 +2,7 @@
   <source media="(prefers-color-scheme: dark)" srcset="header/top-dark.svg">
   <img src="header/top-light.svg" alt="Velofy, Delhi, India" width="100%" height="20" align="left">
 </picture>
-<a href="https://velofy.co/">
-  <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="header/link-site-dark.svg">
-    <img src="header/link-site-light.svg" alt="Visit velofy.co" width="110" height="18" align="left">
-  </picture>
-</a>
+<br>
 <img src="data:null;," width="100%" height="0" align="left" alt="">
 <a href="https://velofy.co/open-source/">
   <picture>
