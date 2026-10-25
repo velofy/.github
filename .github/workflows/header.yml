@@ -1,13 +1,13 @@
 name: Refresh README header
 
-# Redraws the header SVGs once a day so the honeycomb and the commit count stay current.
+# Redraws the header SVGs once a day so the commit grid and the commit count stay current.
 on:
   schedule:
     - cron: "17 1 * * *"
   workflow_dispatch:
   push:
     branches: [main]
-    paths: [profile/header/build.py]
+    paths: [profile/header/build.py, profile/header/brand/**, profile/header/fonts/**]
 
 permissions:
   contents: write
