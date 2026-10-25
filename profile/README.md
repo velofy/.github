@@ -1,11 +1,7 @@
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="header/main-dark.svg">
-  <img src="header/main-light.svg" alt="Velofy, an applied artificial intelligence (AI) and security lab in Delhi, India. Applied AI and security research for real work. Below, a grid of the lab's public commits, one rounded square per day, lit in gold by the number of commits that day." width="100%" height="364" align="left">
-</picture>
 <a href="https://velofy.co/">
   <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="header/link-site-dark.svg">
-    <img src="header/link-site-light.svg" alt="Visit velofy.co" width="79" height="48" align="left">
+    <source media="(prefers-color-scheme: dark)" srcset="header/main-dark.svg">
+    <img src="header/main-light.svg" alt="Velofy at velofy.co, an applied artificial intelligence (AI) and security lab in Delhi, India: applied AI and security research for real work. Below, a grid of the lab's public commits, one rounded square per day, lit in gold by the number of commits that day." width="100%" height="364" align="left">
   </picture>
 </a>
 <a href="https://velofy.co/open-source/">
@@ -48,13 +44,13 @@ Everything is documented at [velofy.co](https://velofy.co/). Source is on [GitHu
 
 ## Why an applied AI and security lab
 
-Start with what models can do now. They read a large codebase, plan work across many steps, call tools and act on what comes back. They also find real security bugs: since 2024, AI systems at Google, OpenAI, Anthropic, Microsoft and others have reported hundreds of previously unknown vulnerabilities in software almost everyone runs.
+Start with what models can do now. They read a large codebase, plan work across many steps, call tools and act on what comes back. They also find real security bugs: since 2024, AI systems at Google, OpenAI, Anthropic, Microsoft and others have found hundreds of previously unknown vulnerabilities in software almost everyone runs.
 
 Then look at where they break. An agent cannot see the page you are signed into, forgets the last session, and cannot be trusted near a production database. A model that reports a vulnerability usually cannot prove it on its own, so false alarms and duplicates pile up, and checking and fixing become the slow part. In both cases the model is rarely the limit. The limit is everything around it: the tools, the context it is given and the checks on what it does.
 
 That work has no natural owner. The labs that train models are busy training them, and the companies that ship products are busy shipping. A lab between the two takes models to real work, measures where they fail, builds the missing piece and publishes it with the evidence.
 
-Security belongs in the same lab. An agent that can act can also be misled, and a model that finds bugs helps an attacker as much as a defender. Building the tools and testing how they fail is one job, so we do both, in the open.
+Security belongs in the same lab. An agent that can act can also be misled, and a model that finds bugs can help an attacker as well as a defender. Building the tools and testing how they fail is one job, so we do both, in the open.
 
 The longer version is the founder's note on [velofy.co/about](https://velofy.co/about/).
 

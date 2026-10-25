@@ -70,7 +70,9 @@ p, h1 { margin: 0; font: inherit; }
 .legend { display: flex; align-items: center; gap: 3px; }
 .legend .c { inline-size: 11px; block-size: 11px; }
 .legend span { margin: 0 5px; }
-.window { position: relative; block-size: calc(7 * var(--step) - 3px); overflow: hidden; }
+/* Clip only on the left, where narrow panels cut off the oldest weeks. A plain
+   overflow: hidden would also cut the top of today's ring. */
+.window { position: relative; block-size: calc(7 * var(--step) - 3px); clip-path: inset(-4px -4px -4px 0); }
 .cells, .marks { position: absolute; right: 0; inline-size: calc(53 * var(--step) - 3px); }
 .cells {
   top: 0;
@@ -123,6 +125,14 @@ p, h1 { margin: 0; font: inherit; }
 }
 @container (max-width: 399px) {
   .legend { display: none; }
+}
+/* Small Android phones (a README column under 300px): the headline takes three
+   lines, so drop the short lede to keep it clear of the grid. */
+@container (max-width: 299px) {
+  .lede-short { display: none; }
+}
+@container (max-width: 279px) {
+  .place { display: none; }
 }
 @container (max-width: 327px) {
   .marks .since { display: none; }

@@ -29,6 +29,7 @@ from __future__ import annotations
 import base64
 import datetime as dt
 import html
+import http.client
 import json
 import math
 import os
@@ -53,8 +54,10 @@ LEDE = (
 
 # Text links in the row under the panel: slug, label, image width in pixels.
 # Each width is the label set in Switzer at 15px, plus the arrow and a gap.
+# GitHub adds 20px after each one. Five links fit two rows in the README column
+# on a phone (about 308px in the browser, 358px in the app); a sixth would leave
+# one link alone on a third row, so velofy.co is the panel's own link instead.
 LINKS = [
-    ("site", "velofy.co", 79),
     ("open-source", "Open source", 107),
     ("research", "Research", 85),
     ("bulletin", "Bulletin", 70),
@@ -182,7 +185,8 @@ def switzer() -> str:
             data = response.read()
         if data[:4] == b"wOF2":
             return base64.b64encode(data).decode()
-    except OSError as error:
+        print(f"{SWITZER_URL} did not return a woff2 file, reusing the last build's copy")
+    except (OSError, http.client.HTTPException) as error:
         print(f"Could not fetch Switzer ({error}), reusing the last build's copy")
     pattern = re.compile(r'font-family:"Switzer";[^}]*?base64,([A-Za-z0-9+/=]+)\)')
     for path in sorted(OUT.glob("main-*.svg")):
@@ -422,7 +426,9 @@ def main(theme: str, today: dt.date, days: Counter, fonts: str) -> str:
 .legend {{ display: flex; align-items: center; gap: 3px; }}
 .legend .c {{ inline-size: 11px; block-size: 11px; }}
 .legend span {{ margin: 0 5px; }}
-.window {{ position: relative; block-size: calc(7 * var(--step) - {GAP}px); overflow: hidden; }}
+/* Clip only on the left, where narrow panels cut off the oldest weeks. A plain
+   overflow: hidden would also cut the top of today's ring. */
+.window {{ position: relative; block-size: calc(7 * var(--step) - {GAP}px); clip-path: inset(-4px -4px -4px 0); }}
 .cells, .marks {{ position: absolute; right: 0; inline-size: calc({WEEKS} * var(--step) - {GAP}px); }}
 .cells {{
   top: 0;
@@ -472,6 +478,14 @@ def main(theme: str, today: dt.date, days: Counter, fonts: str) -> str:
 }}
 @container (max-width: 399px) {{
   .legend {{ display: none; }}
+}}
+/* Small Android phones (a README column under 300px): the headline takes three
+   lines, so drop the short lede to keep it clear of the grid. */
+@container (max-width: 299px) {{
+  .lede-short {{ display: none; }}
+}}
+@container (max-width: 279px) {{
+  .place {{ display: none; }}
 }}
 @container (max-width: {since_at - 1}px) {{
   .marks .since {{ display: none; }}
@@ -529,10 +543,17 @@ def build(today: dt.date | None = None) -> None:
     days = commits_per_day(today - dt.timedelta(days=7 * WEEKS + 7))
     sans = font_face("Switzer", switzer())
     both = sans + font_face("Fragment Mono", fragment_mono())
+    written = set()
     for theme in THEMES:
         (OUT / f"main-{theme}.svg").write_text(main(theme, today, days, both))
         for index, (slug, label, width) in enumerate(LINKS):
-            (OUT / f"link-{slug}-{theme}.svg").write_text(link(theme, slug, label, width, index, sans))
+            name = f"link-{slug}-{theme}.svg"
+            (OUT / name).write_text(link(theme, slug, label, width, index, sans))
+            written.add(name)
+    # A link taken out of LINKS should not leave its old images behind.
+    for stale in OUT.glob("link-*.svg"):
+        if stale.name not in written:
+            stale.unlink()
     print(f"{sum(days.values())} commits on {len(days)} days, written to {OUT}")
 
 

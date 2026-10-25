@@ -19,7 +19,7 @@ p, h1 { margin: 0; font: inherit; }
   line-height: 20px;
   letter-spacing: -0.005em;
   white-space: nowrap;
-  --delay: 0.90s;
+  --delay: 0.82s;
 }
 .link.gold { color: rgb(var(--accent)); }
 .arrow { inline-size: 12px; block-size: 12px; flex: none; }
